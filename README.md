@@ -16,7 +16,7 @@ Este es un proyecto de ejemplo utilizando Next.js 14 con App Router, MUI (Materi
 1. Clona el repositorio:
 
    ```bash
-   git clone <URL_DEL_REPOSITORIO>
+   git clone git@github.com:IonVillarreal/my-news-app-nextjs-api-routes.git
    cd my-news-app
    ```
 
