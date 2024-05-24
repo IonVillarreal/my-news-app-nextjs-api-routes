@@ -30,19 +30,15 @@ const NewsList: React.FC<NewsListProps> = ({ news }) => {
                 {news.map((item) => (
                     <Grid item key={item.id} xs={12} sm={6} md={4}>
                         <Card>
-                            <CardActionArea onClick={(event) => {
-                                router.push(`/news/${item.id}`)
-                            }}>
-                                <CardMedia component="img" height="140" image={item.image} alt={item.title} />
-                                <CardContent>
-                                    <Typography variant="h5" component="div">
-                                        {item.title}
-                                    </Typography>
-                                    <Typography variant="body2" color="text.secondary">
-                                        {item.content}
-                                    </Typography>
-                                </CardContent>
-                            </CardActionArea>
+                            <CardMedia component="img" height="140" image={item.image} alt={item.title} />
+                            <CardContent>
+                                <Typography variant="h5" component="div">
+                                    {item.title}
+                                </Typography>
+                                <Typography variant="body2" color="text.secondary">
+                                    {item.content}
+                                </Typography>
+                            </CardContent>
                         </Card>
                     </Grid>
                 ))}
